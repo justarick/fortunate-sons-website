@@ -26,7 +26,7 @@ h1 {
 h2 {
   margin-top: 4rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: bold;
   text-transform: lowercase;
 }
@@ -34,12 +34,12 @@ h2 {
 h3 {
   text-align: center;
   font-size: 4rem;
-  font-weight: bold;
   text-transform: lowercase;
 }
 
 section {
   padding-top: 2rem;
+  font-size: 2rem;
 }
 
 h6 {
@@ -58,7 +58,7 @@ h6 {
 .banner {
   width: 100%;
   color: #EFEFEF;
-  background-color: #435058;
+  background-color: #1D3428;
 }
 
 .section p {
@@ -68,6 +68,33 @@ h6 {
 .section_text {
   text-align: justify;
   font-size: 2rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile li {
+  list-style: outside;
+}
+
+.p_picture {
+  width: 60%;
+  border: 0.25rem solid white;
+  border-radius: 0.5rem;
+}
+
+.p_name {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.p_description {
+  text-align: justify;
 }
 
 
@@ -97,7 +124,7 @@ h6 {
   top: 0;
   width: 100%;
   color: #EFEFEF;
-  background-color: #435058;
+  background-color: #1D3428;
 }
 
 #nav_content {
@@ -110,7 +137,7 @@ h6 {
   color: #EFEFEF;
   text-decoration: none;
   text-transform: lowercase;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   padding: 0.5rem;
 }
@@ -126,14 +153,20 @@ h6 {
   padding-bottom: 2em;
 }
 
+#profiles {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
 #footer {
   margin-top: auto;
   padding-top: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #EFEFEF;
-  background-color: #435058;
+  background-color: #1D3428;
 }
 
 #footer li {
