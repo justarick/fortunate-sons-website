@@ -1,11 +1,12 @@
 * {
   padding: 0;
+
   margin: 0;
+
   font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
-/*Tags*/
-
+/*General*/
 html {
   height: 100%;
 } 
@@ -13,68 +14,118 @@ html {
 body {
   display: flex;
   flex-direction: column;
+
   min-height: 100%;
 }
 
+.centered {
+  width: 60%;
+
+  margin: 0 auto;
+}
+
+
+/*Header*/
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background-image:url(./resources/images/bg_medium.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #EFEFEF;
+}
+
 h1 {
-  font-size: 12rem;
-  font-weight: bolder;
+  margin: 4rem auto;
+
+  font-size: 10rem;
+  font-weight: bold;
+
   text-align: center;
   text-transform: uppercase;
 }
 
 h2 {
-  margin-top: 4rem;
-  text-align: center;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bold;
+
+  text-align: center;
   text-transform: lowercase;
+}
+
+
+/*Navbar*/
+
+#navbar {
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background-color: #1f1913;
+}
+
+#navbar_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding: 0.5%;
+}
+
+#navbar a {
+  color: #EFEFEF;
+
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+#navbar a:hover {
+  color: #000;
+  background-color:#fff;
+  transition: 0.3s;
+}
+
+
+/*Content*/
+
+#main p {
+  text-align: justify;
+  font-size: 1.5rem;
 }
 
 h3 {
+  font-size: 3rem;
+  font-weight: bold;
+
   text-align: center;
-  font-size: 4rem;
   text-transform: lowercase;
 }
 
-section {
-  padding-top: 2rem;
-  font-size: 2rem;
-}
-
-h6 {
-  font-size: 1em;
-  font-weight: bolder;
-}
-
-
-/*Classes*/
-
-.centered {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.banner {
-  width: 100%;
-  color: #EFEFEF;
-  background-color: #1D3428;
-}
-
-.section p {
-  text-align: justify;
-}
-
-.section_text {
-  text-align: justify;
-  font-size: 2rem;
+#profiles {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem auto;
 }
 
 .profile li {
@@ -99,66 +150,7 @@ h6 {
 }
 
 
-/*Ids*/
-
-#header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  color: #EFEFEF;
-  background-image:url(./resources/images/bg_medium.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#header_content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#nav {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  color: #EFEFEF;
-  background-color: #1D3428;
-}
-
-#nav_content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#nav_content a {
-  color: #EFEFEF;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 0.5rem;
-}
-
-#nav_content a:hover {
-  color: #000;
-  background-color:#EFEFEF;
-  transition: 0.3s;
-}
-
-#main {
-  width: 100%;
-  padding-bottom: 2em;
-}
-
-#profiles {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
+/*Footer*/
 
 #footer {
   margin-top: auto;
@@ -167,17 +159,23 @@ h6 {
   width: 100%;
   font-size: 1.5rem;
   color: #EFEFEF;
-  background-color: #1D3428;
-}
-
-#footer li {
-  list-style-type: none;
+  background-color: #1f1913;
 }
 
 #footer_content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+#footer li {
+  list-style-type: none;
+  font-size: 1rem;
 }
 
 #imprint {
@@ -188,45 +186,8 @@ h6 {
 /*Media Queries*/
 
 @media only screen and (max-width: 1440px) {
-  
-  html {
-    font-size: 12px;
-  }
 
   .centered {
     width: 60%;
-  }
-}
-
-@media only screen and (max-width: 1080px) {
-  
-  html {
-    font-size: 8px;
-  }
-
-  .centered {
-    width: 60%;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  
-  html {
-    font-size: 8px;
-  }
-
-  .centered {
-    width: 70%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  
-  html {
-    font-size: 6px;
-  }
-
-  .centered {
-    width: 80%;
   }
 }
