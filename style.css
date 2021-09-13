@@ -101,6 +101,10 @@ h2 {
   transition: 0.3s;
 }
 
+#active_site {
+  background-color: #3E5936;
+}
+
 
 /*Main*/
 
@@ -126,7 +130,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 
   text-align: center;
@@ -181,140 +185,6 @@ h6 {
 
   h2 {
     font-size: 4rem;
-  }
-
-}
-
-@media only screen and (max-width: 930px) {
-
-  .centered {
-    width: 45rem;
-  
-    margin: 0 auto;
-  }
-
-}
-
-@media only screen and (max-width: 725px) {
-
-  .centered {
-    width: 40rem;
-  
-    margin: 0 auto;
-  }
-
-}
-
-@media only screen and (max-width: 660px) {
-
-  .centered {
-    width: 28rem;
-  
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  #navbar a {
-    font-size: 1rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-}
-
-@media only screen and (max-width: 480px) {
-
-  .centered {
-    width: 24rem;
-  
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  #navbar a {
-    font-size: 1rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  #main p {
-    font-size: 1rem;
-  }
-
-
-  h6 {
-    font-size: 0.8rem;
-  }
-
-  #footer li {
-    font-size: 0.8rem;
-  }
-
-}
-
-@media only screen and (max-width: 385px) {
-
-  .centered {
-    width: 20rem;
-  
-    margin: 0 auto;
-  }
-
-  #navbar_content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-}
-
-@media only screen and (max-width: 325px) {
-
-  .centered {
-    width: 15rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  .article {
-    padding: 1rem 1rem 2rem 1rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  #footer_content {
-    flex-direction: column;
-  }
-
-  #imprint {
-    margin-top: 0.5rem;
   }
 
 }
