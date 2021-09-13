@@ -12,14 +12,14 @@ html {
 } 
 
 body {
+  min-height: 100%;
+
   display: flex;
   flex-direction: column;
-
-  min-height: 100%;
 }
 
 .centered {
-  width: 60%;
+  width: 56rem;
 
   margin: 0 auto;
 }
@@ -28,23 +28,23 @@ body {
 /*Header*/
 
 #header {
+  width: 100%;
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  width: 100%;
-  height: 100vh;
 
   background-image:url(./resources/images/bg_medium.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  color: #EFEFEF;
+  color: #fff;
 }
 
 h1 {
-  margin: 4rem auto;
+  margin-bottom: 5rem;
 
   font-size: 10rem;
   font-weight: bold;
@@ -65,10 +65,10 @@ h2 {
 /*Navbar*/
 
 #navbar {
+  width: 100%;
+
   position: sticky;
   top: 0;
-
-  width: 100%;
 
   display: flex;
   flex-direction: row;
@@ -81,12 +81,12 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
-  padding: 0.5%;
 }
 
 #navbar a {
-  color: #EFEFEF;
+  color: #fff;
+
+  padding: 0.5%;
 
   font-size: 1.5rem;
 
@@ -97,15 +97,32 @@ h2 {
 #navbar a:hover {
   color: #000;
   background-color:#fff;
+
   transition: 0.3s;
 }
 
 
-/*Content*/
+/*Main*/
+
+#main {
+  min-height: 85vh;
+}
 
 #main p {
-  text-align: justify;
   font-size: 1.5rem;
+
+  text-align: justify;
+}
+
+.article {
+  margin: 1.5rem 0;
+
+  padding: 1rem 2rem 2rem 2rem;
+
+  border: 0 solid white;
+  border-radius: 0.2rem;
+
+  background-color: #ebe4de;
 }
 
 h3 {
@@ -116,50 +133,20 @@ h3 {
   text-transform: lowercase;
 }
 
-#profiles {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-
-.profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.profile li {
-  list-style: outside;
-}
-
-.p_picture {
-  width: 100%;
-  border: 0.25rem solid white;
-  border-radius: 0.5rem;
-}
-
-.p_name {
-  margin: 0 auto;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.p_description {
-  text-align: justify;
-}
-
 
 /*Footer*/
 
 #footer {
-  margin-top: auto;
-  padding-top: 1rem;
-  padding-bottom: 1.25rem;
   width: 100%;
-  font-size: 1.5rem;
-  color: #EFEFEF;
+
+  margin-top: auto;
+
+  padding: 0.5rem 0;
+
+  color: #fff;
   background-color: #1f1913;
+
+  font-size: 1.5rem;
 }
 
 #footer_content {
@@ -174,8 +161,9 @@ h6 {
 }
 
 #footer li {
-  list-style-type: none;
   font-size: 1rem;
+
+  list-style-type: none;
 }
 
 #imprint {
@@ -185,9 +173,148 @@ h6 {
 
 /*Media Queries*/
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1200px) {
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 930px) {
 
   .centered {
-    width: 60%;
+    width: 45rem;
+  
+    margin: 0 auto;
   }
+
+}
+
+@media only screen and (max-width: 725px) {
+
+  .centered {
+    width: 40rem;
+  
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+
+  .centered {
+    width: 28rem;
+  
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #navbar a {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .centered {
+    width: 24rem;
+  
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #navbar a {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  #main p {
+    font-size: 1rem;
+  }
+
+
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  #footer li {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media only screen and (max-width: 385px) {
+
+  .centered {
+    width: 20rem;
+  
+    margin: 0 auto;
+  }
+
+  #navbar_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+}
+
+@media only screen and (max-width: 325px) {
+
+  .centered {
+    width: 15rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .article {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  #footer_content {
+    flex-direction: column;
+  }
+
+  #imprint {
+    margin-top: 0.5rem;
+  }
+
 }
