@@ -175,7 +175,7 @@ h3 {
   max-width: 22rem;
   min-height: 34rem;
 
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 1rem auto;
   padding: 1rem;
   border: 0 solid #ebe4de;
   border-radius: 0.2rem;
@@ -203,16 +203,8 @@ h3 {
 
 .description {
   font-size: 1.5rem;
-  
+
   text-align: justify;
-}
-
-.description li {
-  margin-left: 1.5rem;
-
-  list-style-type: circle;
-
-  text-align: left;
 }
 
 #disclaimer {
@@ -263,14 +255,168 @@ h3 {
 
 /*Media Queries*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
 
-  h1 {
-    font-size: 8rem;
+  #header_home h1 {
+    font-size: 6rem;
+  }
+  
+  #header_home h2 {
+    font-size: 3rem;
   }
 
-  h2 {
+}
+
+@media only screen and (max-width: 950px) {
+
+  .centered {
+    width: 34rem;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+  #header_home h1 {
+    margin-bottom: 2rem;
     font-size: 4rem;
+  }
+  
+  #header_home h2 {
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .centered {
+    width: 22rem;
+  }
+
+  #navbar a {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .section_text {
+    font-size: 1rem;
+  }
+
+  .article li {
+    font-size: 1rem;
+  }
+
+  .profile {
+    max-width: 18rem;
+    min-height: 25rem;
+  }
+  
+  .profile img {
+    max-width: 18rem;
+  }
+  
+  .name {
+    margin: 0.5rem 0;
+  
+    font-size: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  #header h1 {
+    font-size: 2rem;
+  }  
+  
+}
+
+@media only screen and (max-width: 400px) {
+
+  .centered {
+    width: 18rem;
+  }
+
+  .profile {
+    max-width: 14rem;
+    min-height: 20rem;
+  }
+  
+  .profile img {
+    max-width: 14rem;
+  }
+  
+}
+
+@media only screen and (max-width: 350px) {
+
+  #header_home h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  #header_home h2 {
+    font-size: 1rem;
+  }
+
+  .article {
+    margin: 1rem 0;
+  
+    padding: 0.75rem 1rem 1rem 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+  .centered {
+    width: 14rem;
+  }
+
+  #navbar a {
+    font-size: 0.75rem;
+  }
+
+  h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .section_text {
+    font-size: 0.75rem;
+  }
+
+  .article li {
+    font-size: 0.75rem;
+  }
+
+  .profile {
+    max-width: 12rem;
+    min-height: 14rem;
+  }
+  
+  .profile img {
+    max-width: 10rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.75rem;
+  }
+
+  #footer a {
+    font-size: 0.75rem;
   }
 
 }
