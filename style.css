@@ -20,14 +20,13 @@ body {
 
 .centered {
   width: 56rem;
-
   margin: 0 auto;
 }
 
 
 /*Header*/
 
-#header {
+#header_home {
   width: 100%;
   height: 100vh;
 
@@ -43,7 +42,7 @@ body {
   color: #fff;
 }
 
-h1 {
+#header_home h1 {
   margin-bottom: 5rem;
 
   font-size: 10rem;
@@ -53,12 +52,28 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
+#header_home h2 {
   font-size: 5rem;
   font-weight: bold;
 
   text-align: center;
   text-transform: lowercase;
+}
+
+#header {
+  background-image:url(./resources/images/bg_medium.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  color: #fff;
+}
+
+#header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -86,7 +101,7 @@ h2 {
 #navbar a {
   color: #fff;
 
-  padding: 0.5%;
+  padding: 0.5rem;
 
   font-size: 1.5rem;
 
@@ -109,7 +124,7 @@ h2 {
 /*Main*/
 
 #main {
-  min-height: 85vh;
+  min-height: 91.6vh;
 }
 
 #main p {
@@ -137,41 +152,51 @@ h3 {
   text-transform: lowercase;
 }
 
+.article li {
+  font-size: 1.5rem;
+
+  text-align: center;
+
+  list-style-type: none;
+}
+
 
 /*Footer*/
 
 #footer {
   width: 100%;
 
-  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-  padding: 0.5rem 0;
-
-  color: #fff;
   background-color: #1f1913;
-
-  font-size: 1.5rem;
 }
 
 #footer_content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-h6 {
+#footer a {
+  color: #fff;
+
+  margin: 0 1rem;
+
+  padding: 0.5rem;
+
   font-size: 1rem;
-  font-weight: bolder;
+
+  text-decoration: none;
+  text-transform: lowercase;
 }
 
-#footer li {
-  font-size: 1rem;
+#footer a:hover {
+  color: #000;
+  background-color:#fff;
 
-  list-style-type: none;
-}
-
-#imprint {
-  text-align: right;
+  transition: 0.3s;
 }
 
 
